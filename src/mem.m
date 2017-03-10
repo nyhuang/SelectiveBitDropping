@@ -1,5 +1,5 @@
 function [psnr_ori_a,psnr_cut_a,psnr_drop_a,alpha_ori,alpha_cut,alpha_drop, ...
-    one_avg_ori,one_avg_cut,one_avg_drop] = mem2(N, coe, size)
+    one_avg_ori,one_avg_cut,one_avg_drop] = mem(N, coe, size)
 
 global number
 global xor_ans

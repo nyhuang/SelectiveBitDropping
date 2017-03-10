@@ -30,7 +30,7 @@ for size = 32
     for coe = 1:coerange
         disp(['k=',num2str(coe)]);
         [psnr_ori_arr(coe),psnr_cut_arr(coe),psnr_drop_arr(coe),alpha_ori_arr(coe),alpha_cut_arr(coe),...
-            alpha_drop_arr(coe),one_avg_ori_arr(coe),one_avg_cut_arr(coe),one_avg_drop_arr(coe)] = mem2(N, coe, size);
+            alpha_drop_arr(coe),one_avg_ori_arr(coe),one_avg_cut_arr(coe),one_avg_drop_arr(coe)] = mem(N, coe, size);
     end
 %     data_name = ['./data/DCT_PGM_', num2str(size), 'k'];
 %     save(data_name);
@@ -42,7 +42,7 @@ end
 %     for coe = 1:coerange
 %         disp(['k=',num2str(coe)]);
 %         [psnr_ori_arr(coe),psnr_cut_arr(coe),psnr_drop_arr(coe),alpha_ori_arr(coe),alpha_cut_arr(coe),...
-%             alpha_drop_arr(coe),one_avg_ori_arr(coe),one_avg_cut_arr(coe),one_avg_drop_arr(coe)] = mem_video2(N, coe, size, libnum);
+%             alpha_drop_arr(coe),one_avg_ori_arr(coe),one_avg_cut_arr(coe),one_avg_drop_arr(coe)] = mem_video(N, coe, size, libnum);
 %     end
 %     data_name = ['./data/MPEG_QCIF', num2str(libnum)];
 %     save(data_name);
